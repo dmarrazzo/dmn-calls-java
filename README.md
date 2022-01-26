@@ -17,7 +17,9 @@ You can run your application in dev mode that enables live coding using:
 
 Probe the DMN using the Open API form: http://localhost:8080/openapi-ui-forms/index.html
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
+> **_WARNING_**: At the first attempt you could get an error, just reload the page and it will run.
+
+Quarkus Dev UI is reachable at http://localhost:8080/q/dev/.
 
 ## Packaging and running the application
 
