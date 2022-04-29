@@ -1,8 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_CF4FBF0A-EE47-4496-B037-FC55537C4A0E" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_F4896F66-6AFD-4DC1-AE71-86648F5AA504" name="java-call" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_CF4FBF0A-EE47-4496-B037-FC55537C4A0E">
   <dmn:extensionElements/>
+  <dmn:itemDefinition id="_D2D9DDD5-87E8-4009-83F2-DD6D083241C6" name="tComplex" isCollection="false">
+    <dmn:itemComponent id="_D50B8DB6-6956-49D9-9D16-FFF0D8DCA9BB" name="name" isCollection="false">
+      <dmn:typeRef>string</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_4A1925EF-EF16-4FBF-B3B5-A0D5DACC9825" name="year" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
   <dmn:inputData id="_B32810D8-7598-4374-98CF-CFA441422EB8" name="input">
     <dmn:extensionElements/>
-    <dmn:variable id="_90BCBEC8-CAFF-45D9-9009-C1BAC1F8A986" name="input" typeRef="string"/>
+    <dmn:variable id="_90BCBEC8-CAFF-45D9-9009-C1BAC1F8A986" name="input" typeRef="tComplex"/>
   </dmn:inputData>
   <dmn:decision id="_20CA9124-5CD7-4333-85F0-FB3EBF05DEC7" name="java call">
     <dmn:extensionElements/>
@@ -32,7 +41,7 @@
         <dmn:contextEntry>
           <dmn:variable id="_4DEF94FB-4C97-4F58-B55D-FDAA52137DEC" name="method signature" typeRef="string"/>
           <dmn:literalExpression id="_31A1B583-3D44-487D-9377-90ED745B0D6A">
-            <dmn:text>"useful(java.lang.String)"</dmn:text>
+            <dmn:text>"useful(java.util.HashMap)"</dmn:text>
           </dmn:literalExpression>
         </dmn:contextEntry>
       </dmn:context>
